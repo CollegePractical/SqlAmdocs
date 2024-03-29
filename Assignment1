@@ -1,0 +1,41 @@
+Code:
+
+
+create database School;
+
+use School;
+
+create Table Students (
+	id int primary key not null identity(1,1),
+	firstName varchar(10) not null,
+	lastName varchar(10) not null,
+	DOB date not null,
+	EnrollmentDate date not null
+);
+
+
+insert into Students values ('Amrit','Singh','2003-01-19','2020-06-01');
+
+insert into Students values
+('Abhay','Bhat','2002-08-02','2021-07-03'),
+('Harsh','Sharma','2000-04-01','2018-07-03'),
+('Sunandan','Gupta','2001-08-02','2017-07-03'),
+('Saniyam','Angral','2005-08-02','2020-07-03'),
+('Tanish','Gupta','2006-08-02','2023-07-03'),
+('Ritesh','Gupta','2009-08-02','2024-07-03');
+
+
+
+select * from Students;
+
+
+
+Result:
+
+1	Amrit	Singh	2003-01-19	2020-06-01
+2	Abhay	Bhat	2002-08-02	2021-07-03
+3	Harsh	Sharma	2000-04-01	2018-07-03
+4	Sunandan	Gupta	2001-08-02	2017-07-03
+5	Saniyam	Angral	2005-08-02	2020-07-03
+6	Tanish	Gupta	2006-08-02	2023-07-03
+7	Ritesh	Gupta	2009-08-02	2024-07-03
